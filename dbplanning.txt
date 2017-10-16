@@ -1,0 +1,27 @@
+User
+	-email
+	-username
+	-password
+
+Board
+	-title
+	-userId
+
+	model:create --name Board --attributes "title:string userId:integer"
+
+List
+	-title
+	-description
+	-boardId
+	-boardIndex
+
+	model:create --name List --attributes "title:string description:text boardId:integer boardIndex:integer"
+
+Card
+	-title
+	-description
+	-listId
+	-listIndex
+	-completed
+
+	model:create --name Card --attributes "title:string description:text listId:integer listIndex:integer completed:boolean"
